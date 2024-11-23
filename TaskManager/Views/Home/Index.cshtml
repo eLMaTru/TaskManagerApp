@@ -3,85 +3,74 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Task Manager Application</h1>
-    <p class="lead">A project developed as a demonstration of ASP.NET Core MVC capabilities.</p>
-    
-    <h3>Overview</h3>
-    <p>
-        This web application is a task management system that allows users to perform basic CRUD (Create, Read, Update, Delete) operations
-        on a list of tasks. Each task consists of a title and description stored in a PostgreSQL database. 
+    <h1 class="display-4">Aplicación de Gestión de Tareas</h1>
+    <div class="container mt-4">       <p>
+        <a class="btn btn-primary" asp-area="#" asp-controller="Tasks" asp-action="">Go to Tasks</a>
     </p>
 
-    <h3>Key Features</h3>
-    <ul class="text-start">
-        <li><strong>View All Tasks:</strong> Users can see all tasks in a structured table format.</li>
-        <li><strong>Create Task:</strong> Add a new task with a title and description.</li>
-        <li><strong>Edit Task:</strong> Modify existing tasks to update their title or description.</li>
-        <li><strong>Delete Task:</strong> Remove tasks from the database with a confirmation prompt.</li>
+</div>
+    <p class="lead">Un proyecto desarrollado para demostrar las capacidades de ASP.NET Core MVC.</p>
+</div>
+
+<div class="container mt-4">
+    <h2>Resumen</h2>
+    <p>Esta aplicación web MVC es un sistema de gestión de tareas que permite a los usuarios realizar operaciones básicas de CRUD (Crear, Leer, Actualizar y Eliminar) en una lista de tareas. Cada tarea consta de un título y una descripción que se almacenan en una base de datos PostgreSQL.</p>
+
+    <h2>Características principales</h2>
+    <ul>
+        <li><strong>Ver todas las tareas:</strong> Los usuarios pueden visualizar todas las tareas en un formato estructurado de tabla.</li>
+        <li><strong>Crear tarea:</strong> Agrega una nueva tarea con un título y descripción.</li>
+        <li><strong>Editar tarea:</strong> Modifica las tareas existentes para actualizar su título o descripción.</li>
+        <li><strong>Eliminar tarea:</strong> Elimina tareas de la base de datos con una confirmación previa.</li>
     </ul>
 
-    <h3>Technologies Used</h3>
-    <ul class="text-start">
-        <li><strong>ASP.NET Core 7 MVC:</strong> Used for structuring the application following the Model-View-Controller pattern.</li>
-        <li><strong>Entity Framework Core:</strong> ORM (Object-Relational Mapping) for database operations.</li>
-        <li><strong>PostgreSQL:</strong> A powerful open-source relational database for data storage.</li>
-        <li><strong>Bootstrap:</strong> For responsive and modern styling of the user interface.</li>
-        <li><strong>Razor Views:</strong> To dynamically generate HTML content and handle UI logic.</li>
+    <h2>Tecnologías utilizadas</h2>
+    <ul>
+        <li><strong>ASP.NET Core 7 MVC:</strong> Utilizado para estructurar la aplicación siguiendo el patrón Modelo-Vista-Controlador.</li>
+        <li><strong>Entity Framework Core:</strong> ORM (Mapeo Objeto-Relacional) para operaciones con la base de datos.</li>
+        <li><strong>PostgreSQL:</strong> Una base de datos relacional de código abierto potente para el almacenamiento de datos.</li>
+        <li><strong>Bootstrap:</strong> Para un diseño moderno y adaptable en la interfaz de usuario.</li>
+        <li><strong>Vistas Razor:</strong> Para generar contenido HTML dinámico y manejar la lógica de la interfaz.</li>
     </ul>
 
-    <h3>How It Works</h3>
-    <ol class="text-start">
-        <li><strong>Database:</strong> 
-            <p>
-                The application uses a `Tasks` table in a PostgreSQL database. This table contains the following columns:
-                <ul>
-                    <li><strong>Id:</strong> Primary key for uniquely identifying tasks.</li>
-                    <li><strong>Title:</strong> A short description of the task.</li>
-                    <li><strong>Description:</strong> Detailed information about the task.</li>
-                </ul>
-            </p>
-        </li>
-        <li><strong>Controllers:</strong> 
-            <p>
-                The `TasksController` handles requests and coordinates communication between the user interface and the database:
-                <ul>
-                    <li>`Index`: Displays all tasks.</li>
-                    <li>`Create`: Adds a new task to the database.</li>
-                    <li>`Edit`: Updates existing task information.</li>
-                    <li>`Delete`: Removes a task from the database.</li>
-                </ul>
-            </p>
-        </li>
-        <li><strong>Views:</strong> 
-            <p>
-                Razor views provide a clean and responsive user interface for interacting with the application. Each CRUD operation has its own view.
-            </p>
-        </li>
+    <h2>Funcionamiento</h2>
+    <h3>Base de datos:</h3>
+    <p>La aplicación utiliza una tabla <code>Tasks</code> en una base de datos PostgreSQL. Esta tabla contiene las siguientes columnas:</p>
+    <ul>
+        <li><strong>Id:</strong> Clave primaria para identificar las tareas de forma única.</li>
+        <li><strong>Título:</strong> Una breve descripción de la tarea.</li>
+        <li><strong>Descripción:</strong> Información detallada sobre la tarea.</li>
+    </ul>
+
+    <h3>Controladores:</h3>
+    <p>El controlador <code>TasksController</code> gestiona las solicitudes y coordina la comunicación entre la interfaz de usuario y la base de datos:</p>
+    <ul>
+        <li><strong>Index:</strong> Muestra todas las tareas.</li>
+        <li><strong>Create:</strong> Añade una nueva tarea a la base de datos.</li>
+        <li><strong>Edit:</strong> Actualiza la información de las tareas existentes.</li>
+        <li><strong>Delete:</strong> Elimina una tarea de la base de datos.</li>
+    </ul>
+
+    <h3>Vistas:</h3>
+    <p>Las vistas Razor ofrecen una interfaz de usuario limpia y adaptable para interactuar con la aplicación. Cada operación CRUD tiene su propia vista.</p>
+
+    <h2>Propósito del proyecto</h2>
+    <p>Este proyecto fue creado como parte de un curso de desarrollo de software para demostrar la integración de tecnologías web modernas utilizando ASP.NET Core MVC. Destaca el uso de:</p>
+    <ul>
+        <li>Integración de bases de datos con Entity Framework Core.</li>
+        <li>Renderización de contenido dinámico con Razor Pages.</li>
+        <li>Diseño adaptable con Bootstrap.</li>
+    </ul>
+
+    <h2>Cómo empezar</h2>
+    <ol>
+        <li>Navega a la página de tareas para ver todas las tareas disponibles.</li>
+        <li>Utiliza el botón <strong>Crear</strong> para agregar una nueva tarea.</li>
+        <li>Haz clic en <strong>Editar</strong> para modificar los detalles de una tarea.</li>
+        <li>Haz clic en <strong>Eliminar</strong> para eliminar una tarea de forma permanente.</li>
     </ol>
 
-    <h3>Purpose of the Project</h3>
-    <p>
-        This project was created as part of a software development course to demonstrate the integration of modern web technologies 
-        using ASP.NET Core MVC. It showcases the use of:
-    </p>
-    <ul class="text-start">
-        <li>Database integration with Entity Framework Core.</li>
-        <li>Dynamic content rendering using Razor Pages.</li>
-        <li>Responsive design with Bootstrap.</li>
-    </ul>
 
-    <h3>How to Get Started</h3>
-    <p>
-        Follow these steps to use the application:
-        <ol>
-            <li>Navigate to the <strong>Tasks</strong> page to see all available tasks.</li>
-            <li>Use the <strong>Create</strong> button to add a new task.</li>
-            <li>Click on <strong>Edit</strong> to modify a task's details.</li>
-            <li>Click on <strong>Delete</strong> to remove a task permanently.</li>
-        </ol>
-    </p>
-
-    <p>
-        <a class="btn btn-primary" asp-area="" asp-controller="Tasks" asp-action="Index">Go to Tasks</a>
-    </p>
+ 
 </div>
+
