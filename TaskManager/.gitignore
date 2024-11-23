@@ -1,1 +1,27 @@
-*.ddl
+# Build Folders
+bin/
+obj/
+
+# User-specific Files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore DLLs
+*.dll
+
+# Logs
+*.log
+
+# Config files
+appsettings*.json
+
+# Rider files
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# Backup Files
+*.bak

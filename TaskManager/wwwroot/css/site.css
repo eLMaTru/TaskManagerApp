@@ -20,3 +20,27 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+
+/*
+
+*/
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #333;
+  margin: 0.5em 0;
+}
+
+p {
+  line-height: 1.6;
+  margin: 0.5em 0;
+}
