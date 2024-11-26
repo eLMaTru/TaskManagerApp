@@ -25,3 +25,20 @@ appsettings*.json
 
 # Backup Files
 *.bak
+
+# Ignorar archivos binarios y generados automáticamente
+bin/
+obj/
+
+# Archivos de configuración específicos del entorno
+*.user
+*.suo
+
+# Archivos temporales
+*.log
+*.cache
+*.temp
+
+# Archivos de lock específicos de dependencias
+project.lock.json
+*.lock.json
