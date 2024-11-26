@@ -17,7 +17,7 @@ obj/
 # Config files
 appsettings*.json
 
-# Rider files
+# Rider files 
 .idea/
 
 # Visual Studio Code
